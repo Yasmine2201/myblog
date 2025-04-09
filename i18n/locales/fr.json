@@ -1,0 +1,47 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "Profil"
+  },
+  "langauge": {
+    "en": "Anglais",
+    "fr": "Français"
+  },
+  "home": {
+    "job": "Ingénieure en développement Logiciel et Systèmes d'Information",
+    "description": "Je suis Yasmine, ingénieure en développement logiciel chez Renault, avec une formation à Sorbonne Université et à l’EFREI. J’aime travailler sur des projets tech, que ce soit en développement ou en DevOps. En parallèle, je suis formatrice bénévole et j’aide des personnes en reconversion à apprendre les bases de la programmation web.",
+    "my-repos": "Mon top 5 applications personnelles",
+    "my-cv": "Mon CV",
+    "title": "Bienvenue au blog de Yasmine"
+  },
+  "repository": {
+    "source-code": "Code source",
+    "deployed": "Déployé",
+    "trip-planner": {
+      "name": "Trip Planner",
+      "description": "Trip-Planner est une application tout-en-un pour planifier des voyages, gérer votre budget, recevoir des suggestions de visites et organiser des voyages en groupe."
+    },
+    "teach-finder": {
+      "name": "Teach Finder",
+      "description": "Teach-Finder est une application web qui aide les écoles à trouver le bon enseignant pour leurs besoins. Elle leur permet de rechercher des enseignants en fonction de leurs compétences, de leur emplacement et de leur disponibilité."
+    },
+    "share-kind-words": {
+      "name": "Share Kind Words",
+      "description": "Share Kind Words est une application web simple qui permet aux utilisateurs de lire et de publier des messages gentils. C'est un excellent moyen de répandre la positivité et la gentillesse."
+    },
+    "llm-detector": {
+      "name": "LLM Detector",
+      "description": "LLM Detector est une application qui permet aux utilisateurs de détecter si un texte a été généré par un grand modèle de langage ou non. C'est un excellent moyen de vérifier l'authenticité d'un texte."
+    },
+    "mini-native-js-projects": {
+      "name": "Projets natifs en JS modernes",
+      "description": "Quatre mini projets développés en utilisant des techniques modernes de JavaScript sans dépendre de frameworks, avec une complexité croissante du chapitre_1, où j'ai créé une mini application de quiz au chapitre_4, où j'ai construit une application de chat avec authentification et intégration Firebase."
+    }
+  },
+  "tooltips": {
+    "source-code": "Voir le code source sur GitHub",
+    "deployed": "Voir le site déployé",
+    "see-github": "Voir tout sur Github",
+    "see": "Voir tout"
+  }
+}
