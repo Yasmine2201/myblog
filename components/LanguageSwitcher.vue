@@ -10,6 +10,7 @@ const switchLocale = (code: string) => {
 </script>
 
 <template>
+
   <USelectMenu
       v-model="locale"
       :options="locales"

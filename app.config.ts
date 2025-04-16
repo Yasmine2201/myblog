@@ -1,7 +1,6 @@
 export default defineAppConfig({
     ui: {
         primary: 'black',
-        gray: 'pink',
         tooltip: {
             base: 'overflow-scroll'
         },

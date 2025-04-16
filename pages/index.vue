@@ -1,35 +1,34 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n';
+import {useI18n} from 'vue-i18n';
 import profilePic from '@/assets/profile_pic_pro.jpg'
 import type {Repository} from "~/types/repository";
 
-const { t, locale } = useI18n();
+const {t, locale} = useI18n();
 
-const repositories : Repository[] = [
+const repositories = computed((): Repository[] => [
   {
     name: "Trip Planner",
     picture: profilePic,
-    description:  t(`repository.trip-planner.description`),
+    description: t(`repository.trip-planner.description`),
     deployLink: null,
     githubLink: "https://github.com/Yasmine2201/Trip-Planner",
-    technologies: "Vue Nuxt 3 + Django Rest Framework + PostgreSQL + Git + CI/CD + Supabase"
+    technologies: ["Vue Nuxt 3", "Django Rest Framework", "PostgreSQL", "Git", "CI/CD", "Supabase"]
   },
   {
     name: "Teach Finder",
     picture: profilePic,
-    description:  t(`repository.teach-finder.description`),
+    description: t(`repository.teach-finder.description`),
     deployLink: null,
     githubLink: "https://github.com/Yasmine2201",
-    technologies: "Vue Nuxt 3 + Django Rest Framework + PostgreSQL + Git + CI/CD + Supabase"
-
+    technologies: ["JEE", "BootStrap", "JPA", "MySQL", "MVC Architecture", "Git", "CI/CD"]
   },
   {
     name: "Share Kind Words",
     picture: profilePic,
     description: t(`repository.share-kind-words.description`),
     deployLink: "https://www.words.yasmine-azib.cloud",
-    githubLink: "https://github.com/Yasmine2201/Share-Kind-Words",
-    technologies: "Vue Nuxt 3 + Django Rest Framework + PostgreSQL + Git + CI/CD + Supabase"
+    githubLink: "https://github.com/Yasmine2201/cloud-integration",
+    technologies: ["Django", "DB SQLite", "BoosStrap", "MVT Architecture ", "Git", "CI/CD", "Docker"]
   },
   {
     name: "LLM Detector",
@@ -37,7 +36,7 @@ const repositories : Repository[] = [
     description: t(`repository.llm-detector.description`),
     deployLink: null,
     githubLink: "https://github.com/Yasmine2201/EFREI-LLM-Detector-Google",
-    technologies: "Vue Nuxt 3 + Django Rest Framework + PostgreSQL + Git + CI/CD + Supabase"
+    technologies: ["Machine Learning", "Python", "JupyterNotebook", "TensorFlow"]
   },
   {
     name: "Native modern JS Projects",
@@ -45,10 +44,9 @@ const repositories : Repository[] = [
     description: t(`repository.mini-native-js-projects.description`),
     deployLink: null,
     githubLink: "https://github.com/Yasmine2201/Mini-Projects-with-modern-JS",
-    technologies: "Vue Nuxt 3 + Django Rest Framework + PostgreSQL + Git + CI/CD + Supabase"
+    technologies: ["JavaScript", "HTML", "CSS"]
   }
-
-]
+]);
 
 // Watch for changes in the locale and trigger reactivity
 watch(locale, () => {
@@ -57,50 +55,44 @@ watch(locale, () => {
 </script>
 
 <template>
-  <UContainer class="w-screen py-5">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-      <!-- Left Side: Profile -->
-      <div class="flex flex-col items-center justify-center text-center bg-neutral-100 dark:bg-neutral-900 h-full">
-        <img
-            :src="profilePic"
-            alt="Your Name"
-            class="mx-auto w-96 h-96 object-cover mb-4"
-        />
+  <UContainer class="w-full py-10">
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center text-center mb-12 shadow-md dark:shadow-none dark:bg-neutral-900">
+      <img
+          :src="profilePic"
+          alt="Yasmine Azib"
+          class="rounded-full w-64 h-64 object-cover shadow-lg mb-6 hover:scale-105 transition-transform duration-300"
+      />
+      <h1 class="text-5xl font-extrabold text-gray-900 dark:text-white">Yasmine AZIB</h1>
+      <h2 class="text-2xl text-gray-600 dark:text-gray-300 mt-2">{{ t('home.job') }}</h2>
+      <p class="font-semibold"> {{ t('home.resume') }} </p>
 
-        <div class="mb-6">
-          <h1 class="text-4xl font-bold">Yasmine AZIB</h1>
-          <h3 class="text-2xl text-gray-700 dark:text-gray-200">{{ t('home.job') }}</h3>
-          <div class="space-x-3 mt-4">
-            <Badges />
-          </div>
-        </div>
-        <p class="text-xl text-gray-900 dark:text-gray-100 mt-1 p-5">{{ t('home.description') }}</p>
+      <div class="mt-4 space-x-3">
+        <Badges/>
       </div>
 
-      <!-- Right Side: Repositories -->
-      <div class="max-h-[calc(100vh-10rem)] overflow-y-auto">
-        <div class="flex items-center justify-between px-10 pb-2">
-          <p class="text-md font-bold dark:text-white">{{t('home.my-repos')}}</p>
-          <UTooltip :text="t('tooltips.see-github')">
-            <a href="https://github.com/Yasmine2201" class="flex">
-             <p class="pr-1"> {{ t('tooltips.see') }} </p>
-              <Icon name="i-simple-icons-github" class="w-6 h-6 text-gray-500 dark:text-gray-400"/>
-            </a>
-          </UTooltip>
+      <p class="max-w-4xl text-lg text-gray-800 dark:text-gray-200 mt-6 px-4">
+        {{ t('home.description') }}
+      </p>
 
-        </div>
+    </section>
 
-         <div class="px-1">
-          <ul class="space-y-2">
-            <li v-for="repo in repositories" :key="repo.name">
-              <RepositoryCard :repository="repo" />
-            </li>
-          </ul>
-         </div>
-        </div>
+    <!-- Repositories Section -->
+    <UDivider :label="t('home.some-works')" size="md" class="my-2 dark:text-fuchsia-500 font-bold mb-3"/>
+    <section>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-10 mt-10">
+        <li
+            v-for="repo in repositories"
+            :key="repo.name"
+            class="w-full max-w-xl mx-auto"
+        >
+          <RepositoryCard :repository="repo"/>
+        </li>
+      </ul>
 
-    </div>
+    </section>
   </UContainer>
+
 </template>
 
 

@@ -41,6 +41,16 @@
       Mon CV
     </a>
   </UBadge>
+  <UBadge
+      color="black"
+      variant="solid"
+      icon="i-simple-icons-github"
+      size="md"
+  >
+  <a href="https://github.com/Yasmine2201">
+    Github
+  </a>
+  </UBadge>
 </template>
 
 <style scoped>

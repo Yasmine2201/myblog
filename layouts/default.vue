@@ -1,12 +1,12 @@
 <script setup lang="ts">
 
 useHead({
-  title: 'Yasmine’s Blog' ,
+  title: 'Yasmine AZIB' ,
   link: [
     {
       rel: 'icon',
       type: 'image/png',
-      href: 'profile_pic_pro.jpg'
+      href: 'yasmine.png'
     }
   ]
 })

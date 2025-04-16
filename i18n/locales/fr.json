@@ -1,7 +1,8 @@
 {
   "navbar": {
     "home": "Accueil",
-    "about": "Profil"
+    "about": "Profil",
+    "theme": "Changer le thème couleur"
   },
   "langauge": {
     "en": "Anglais",
@@ -9,10 +10,12 @@
   },
   "home": {
     "job": "Ingénieure en développement Logiciel et Systèmes d'Information",
-    "description": "Je suis Yasmine, ingénieure en développement logiciel chez Renault, avec une formation à Sorbonne Université et à l’EFREI. J’aime travailler sur des projets tech, que ce soit en développement ou en DevOps. En parallèle, je suis formatrice bénévole et j’aide des personnes en reconversion à apprendre les bases de la programmation web.",
+    "resume": "Renault Group . diplôme d’ingénieur en informatique EFREI . double licence Sorbonne Université",
+    "description": "Soyez la bienvenue à mon blog. Je suis Yasmine, une passionnée des nouvelles technologies, toujours curieuse d’apprendre et d’innover. En bas, vous trouverez un aperçu de mes projets personnels. Sur les widgets juste au-dessus, vous pouvez consulter mon CV, m'envoyer un mail ou m'appeler. Je serais ravie d'échanger avec vous !",
     "my-repos": "Mon top 5 applications personnelles",
     "my-cv": "Mon CV",
-    "title": "Bienvenue au blog de Yasmine"
+    "title": "Bienvenue au blog de Yasmine",
+    "some-works": "Aperçu de mes projets personnels"
   },
   "repository": {
     "source-code": "Code source",
@@ -35,7 +38,7 @@
     },
     "mini-native-js-projects": {
       "name": "Projets natifs en JS modernes",
-      "description": "Quatre mini projets développés en utilisant des techniques modernes de JavaScript sans dépendre de frameworks, avec une complexité croissante du chapitre_1, où j'ai créé une mini application de quiz au chapitre_4, où j'ai construit une application de chat avec authentification et intégration Firebase."
+      "description": "Quatre mini projets développés en utilisant des techniques modernes de JavaScript sans dépendre de frameworks, avec une complexité croissante du quiz simple au chat entre plusieurs utilisateurs avec Firebase."
     }
   },
   "tooltips": {
@@ -43,5 +46,36 @@
     "deployed": "Voir le site déployé",
     "see-github": "Voir tout sur Github",
     "see": "Voir tout"
-  }
+  },
+  "about": {
+    "me": "À propos de moi",
+    "academic": "Mon parcours universitaire",
+    "professional-experience": "Mon expérience professionnelle",
+    "skills": "Mes compétences",
+    "fun-facts": "Anecdotes amusantes",
+  },
+  "me": "Hello tout le monde ! Moi c'est Yasmine, passionnée de nouvelles technologies, toujours curieuse d’apprendre et d’innover. Je suis ingénieure logiciel avec 2 ans d’expérience chez Renault et plus de 5 ans d’études dans la tech. Mais je ne me résume pas qu'à ça ! Ce qui me tient à cœur, c’est d’apporter de l’aide et de la bonne humeur autour de moi. D’ailleurs, au-delà de la tech et du bénévolat, je me ressource en jouant au volley. Eh oui, un esprit sain dans un corps sain !",
+  "me-end": "Si tu veux en savoir plus sur moi, continue de faire défiler vers le bas",
+  "me-fun-facts": "Spoiler : des anecdotes amusantes sur moi vous attendent à la fin \uD83C\uDF89",
+  "academic": "Mon aventure universitaire a commencé à {Sorbonne} Université, où j’ai suivi une {first-degree} en Informatique et Physique. Cette formation m’a permis d’acquérir des bases solides en algorithmique et programmation. Une fois ces deux diplômes en poche, j’ai décidé de me spécialiser davantage en rejoignant {EFREI}, grande école d’ingénieurs en informatique. J’y ai intégré le parcours {second-degree}, qui m’a permis de consolider mes compétences en développement logiciel, architecture des systèmes et gestion de projets informatiques.",
+  "first-degree": "double licence",
+  "second-degree": "Logiciels et Systèmes d'Information",
+  "professional-experience": "Cela fera bientôt deux ans que je travaille chez {renault}, plus précisément au sein de l'entité {ampere}. Au cours de la première année, j’ai développé une bibliothèque Python pour optimiser la gestion des spécifications de diagnostic automobile, fiabiliser les données via des tests de cohérence et automatiser certaines tâches répétitives. Cette année, je me concentre sur le développement de plugins Wireshark pour décoder des protocoles réseaux propriétaires utilisés dans les véhicules. Cela implique une bonne maîtrise des protocoles réseau et une expertise dans la connectivité automobile.",
+  "skill-1": {
+    "title": "Développement fullstack",
+    "description": "Maîtrisant plusieurs langages de programmation, j’ai conçu de nombreuses applications web en m'appuyant sur des frameworks modernes et performants. Mon expérience couvre également le développement d’applications Android ainsi que l’ingénierie des tests logiciels . J’intègre les principes avancés de conception logicielle, notamment les design patterns et la modélisation UML, afin d’assurer des architectures pérennes et évolutives"
+  },
+  "skill-2": {
+    "title": "DevOps et Cloud",
+    "description": "Je suis également à l'aise avec l’automatisation des processus de développement et de déploiement. J’ai acquis une solide expérience dans la mise en place de pipelines CI/CD, l’intégration de tests automatisés et la gestion des environnements cloud. Je maîtrise également les outils de conteneurisation tels que Docker et Kubernetes, ce qui me permet d’optimiser la gestion des ressources et d’assurer une scalabilité efficace des applications.",
+  },
+  "skill-3" : {
+    "title": "Systèmes et Réseaux",
+    "description": "Ma formation et mon expérience m'ont permis d'avoir une bonne compréhension des systèmes d'information et des réseaux. J'ai travaillé sur des projets impliquant la configuration de serveurs, la gestion de bases de données et l'analyse du trafic réseau. Je suis familière avec les protocoles de communication automobiles et des normes de sécurité, ce qui me permet de concevoir des solutions robustes et sécurisées."
+    },
+  "fun-facts" : "Quand j'étais petite, je ne ratais aucun épisode de l'émission {emission}. J'étais persuadée qu'un jour, moi aussi j'aurais un tableau magique et un camion-laboratoire pour expliquer des trucs improbables. Ça a nourri ma curiosité pour les sciences et les technologies. Résultat : 15 ans après, toujours pas de camion, mais un PC, du code partout et des serveurs qui tournent dans un coin. Finalement, c’est un peu pareil… sans les chemises à carreaux de Jamy",
+
 }
+
+
+

@@ -4,5 +4,5 @@ export interface Repository {
   description: string;
   deployLink: string | null;
   githubLink: string;
-  technologies: string;
+  technologies: string[];
 }

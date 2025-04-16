@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { t } = useI18n();
 const colorMode = useColorMode();
 const isDark = computed({
   get() {
@@ -11,6 +12,7 @@ const isDark = computed({
 </script>
 
 <template>
+  <UTooltip :text="t('navbar.theme')">
   <UButton
       :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
       color="gray"
@@ -20,6 +22,7 @@ const isDark = computed({
       square
       @click="isDark = !isDark"
   />
+  </UTooltip>
 </template>
 
 <style scoped>
